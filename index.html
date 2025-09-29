@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>   
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,7 +13,8 @@
 <body>
   <main>
     <div class="container">
-      <header class="head">
+      <!-- Header -->
+      <div class="head">
         <div class="head1">
           <h1>Memory Game</h1>
           <span>
@@ -21,31 +22,16 @@
           </span>
         </div>
         <div class="head2">
-          <button id="pause" aria-label="Pause Game"><i class="ri-pause-fill"></i></button>
+          <button id="pause"><i class="ri-pause-fill"></i></button>
           <h2>Time - <span id="min">00</span>:<span id="sec">00</span></h2>
           <h2>Score - <span id="score">0</span></h2>
-          <h2>Coins - <span id="coins">0</span></h2>
-          <button id="shop-btn">Shop</button>
-          <div class="theme-switcher">
-            <input type="checkbox" id="theme-toggle">
-            <label for="theme-toggle">
-              <i class="ri-sun-fill"></i>
-              <i class="ri-moon-fill"></i>
-            </label>
-          </div>
         </div>
-        <div class="head3">
-          <h2>Level Time - <span id="level-time">00</span></h2>
-        </div>
-      </header>
+      </div>
 
-      <section class="game-area">
-        <div class="box" role="grid"></div>
-        <div class="start-game">
-            <button id="start">Start Game</button>
-        </div>
-      </section>
+      <!-- Game Board -->
+      <div class="box"></div>
 
+      <!-- Win Message -->
       <div class="win hidden">
         <h2>YOU WON 🎉</h2>
         <h3>Time : <span id="time-req"></span></h3>
