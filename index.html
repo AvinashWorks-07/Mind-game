@@ -1,0 +1,45 @@
+<!DOCTYPE html>   
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <!-- Header -->
+      <div class="head">
+        <div class="head1">
+          <h1>Memory Game</h1>
+          <span>
+            <img src="https://cdn-icons-png.flaticon.com/256/7650/7650331.png" alt="Game Icon">
+          </span>
+        </div>
+        <div class="head2">
+          <button id="pause"><i class="ri-pause-fill"></i></button>
+          <h2>Time - <span id="min">00</span>:<span id="sec">00</span></h2>
+          <h2>Score - <span id="score">0</span></h2>
+        </div>
+      </div>
+
+      <!-- Game Board -->
+      <div class="box"></div>
+
+      <!-- Win Message -->
+      <div class="win hidden">
+        <h2>YOU WON 🎉</h2>
+        <h3>Time : <span id="time-req"></span></h3>
+        <button id="restart">Next Level <i class="ri-restart-line"></i></button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
